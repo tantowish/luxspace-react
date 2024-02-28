@@ -135,3 +135,7 @@ a.cart.cart-filled svg g circle.dot {
 button[disabled] {
   @apply bg-gray-300 hover:bg-gray-300 text-gray-400 hover:text-gray-400 cursor-not-allowed;
 }
+
+section:not(.bg-gray-100) + section.sitemap > div {
+  @apply border-t
+}
