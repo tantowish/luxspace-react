@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 export default function Header({ theme, position }: { theme: string, position: string }) {
     return (
-        <header className={`${position} w-full z-50 px-4`}>
+        <header className={`${position} w-full z-20 px-4`}>
             <div className="container mx-auto py-5">
                 <div className="flex flex-stretch items-center">
                     <div className="w-56 items-center flex">
@@ -78,7 +78,7 @@ export default function Header({ theme, position }: { theme: string, position: s
                             <li className="ml-6">
                                 <Link
                                     to={"/cart"}
-                                    className={`flex items-center justify-center w-8 h-8 ${theme === "white" ? "text-black md:text-white": "text-white md:text-black"}`}>
+                                    className={`flex items-center justify-center w-8 h-8 ${theme === "white" ? "text-black md:text-white" : "text-white md:text-black"}`}>
                                     <svg
                                         className="fill-current"
                                         width="26"
